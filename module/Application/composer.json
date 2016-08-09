@@ -1,0 +1,58 @@
+{
+    "name": "codingmatters/zf-module-ini",
+    "description": "Skeleton module for ZF application",
+    "license": "MIT",
+    "type": "zend-module",
+    "keywords": ["ZF module"],
+    "homepage": "https://github.com/CodingMatters/ZFModuleIni/",
+    "authors": [
+        {
+            "name": "Gab Amba",
+            "email": "gamba@gabbydgab.com",
+            "homepage": "http://www.gabbydgab.com/"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "roave/security-advisories": "dev-master",
+        "composer/installers": "~1.0",        
+        "codingmatters/site-component-installer": "^1.0 || ~0.1"
+    },
+    "require-dev": {        
+        "zendframework/zend-test": "^3.0",
+        "squizlabs/php_codesniffer": "^2.3",
+        "phpbench/phpbench": "^0.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ApplicationTest\\": "test/"
+        }
+    },
+    "extra": {
+        "installer-name": "Application",
+        "zf": {
+            "module": "Application",
+            "config-provider": "Application\\ConfigProvider"
+        }
+    },
+    "scripts": {
+        "post-install-cmd"  : [            
+            "@check"
+        ],
+        "post-update-cmd"   : [            
+            "@check"
+        ],
+        "check": [
+            "@test",
+            "@cs" 
+        ],
+        "cs": "phpcs",
+        "cs-fix": "phpcbf",
+        "test": "phpunit"
+    }
+}
