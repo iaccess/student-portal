@@ -1,4 +1,4 @@
-Academe - Student Portal
+iAccess - Student Portal
 =========================
 
 TO DO:
