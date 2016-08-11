@@ -15,6 +15,9 @@ data/sessions/
 data/tmp/
 temp/
 
+#modules
+module/Student
+
 # UI Dependent Components
 public/assets/bootstrap
 public/assets/font-awesome
