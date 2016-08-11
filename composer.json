@@ -1,6 +1,6 @@
 {
-    "name": "iaccess/student-portal",    
-    "type": "project",    
+    "name": "iaccess/registrar-portal",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
@@ -14,21 +14,21 @@
         "roave/security-advisories": "dev-master",
         "zendframework/zend-component-installer": "^1.0 || ~0.3",
         "zendframework/zend-mvc": "^3.0.2",
-        "iaccess/student-module": "^1.0 || ~0.1"
+        "iaccess/student-module": "^1.0 || ~0.2"
     },
     "require-dev": {
         "zendframework/zend-developer-tools": "^1.1.0",
         "zfcampus/zf-development-mode": "^3.0",
         "bjyoungblood/bjy-profiler": "^1.1.0",
         "fzaninotto/faker": "^1.6",
-        "zendframework/zend-test": "^3.0.1",        
+        "zendframework/zend-test": "^3.0.1",
         "squizlabs/php_codesniffer": "^2.6.2",
-        "phpbench/phpbench": "^0.11.2",        
+        "phpbench/phpbench": "^0.11.2",
         "sebastian/phpcpd": "^2.0.4"
     },
     "autoload": {
         "psr-4": {
-            "Application\\": "module/Application/src",           
+            "Application\\": "module/Application/src",
             "Dashboard\\": "module/Dashboard/src"
         }
     },
@@ -58,7 +58,6 @@
             "@show-me-the-bugs"
         ],
         "show-me-the-bugs": [
-            "@cs",
             "@cpd",
             "@test"
         ],
