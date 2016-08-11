@@ -18,6 +18,18 @@ temp/
 #modules
 module/Student/
 
+# UI Dependent Components
+public/assets/bootstrap/
+public/assets/font-awesome/
+public/assets/jquery/
+public/assets/jquery-ui/
+
+# Test Build
+public/build/
+
+# Netbeans Project
+nbproject/
+
 #Others
 ._*
 .vagrant
